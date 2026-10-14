@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ResourceData" format=3 uid="uid://doticuo4gassq"]
+
+[ext_resource type="Script" uid="uid://diqolbveumwy0" path="res://Data/Resources/resource_data.gd" id="1_ar3c8"]
+
+[resource]
+script = ExtResource("1_ar3c8")
+resource_item_name = "Reinforced Iron Plate"
+metadata/_custom_type_script = "uid://diqolbveumwy0"

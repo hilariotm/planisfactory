@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ResourceData" format=3 uid="uid://d1stimrjpdjer"]
+
+[ext_resource type="Script" uid="uid://diqolbveumwy0" path="res://Data/Resources/resource_data.gd" id="1_cu52s"]
+
+[resource]
+script = ExtResource("1_cu52s")
+resource_item_name = "Cable"
+metadata/_custom_type_script = "uid://diqolbveumwy0"

@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://c7hlh1472101i"]
+
+[ext_resource type="Texture2D" uid="uid://t25wmtc0hi6" path="res://Assets/Constructor.svg" id="1_cf6j2"]
+[ext_resource type="PackedScene" uid="uid://dmkio63f55qkd" path="res://Prefabs/constructor.tscn" id="2_3js4p"]
+[ext_resource type="Script" uid="uid://djkgfaaqbs746" path="res://Data/Buildings/building_requirement.gd" id="3_o10f2"]
+[ext_resource type="Resource" uid="uid://doticuo4gassq" path="res://Data/Resources/reinforced_iron_plate_data.tres" id="4_acfwr"]
+[ext_resource type="Resource" uid="uid://d1stimrjpdjer" path="res://Data/Resources/cable_data.tres" id="5_mbmjb"]
+[ext_resource type="Script" uid="uid://dhttg0ef5v2pv" path="res://Data/Buildings/building_data.gd" id="6_pe4ob"]
+
+[sub_resource type="Resource" id="Resource_lptii"]
+script = ExtResource("3_o10f2")
+resource = ExtResource("4_acfwr")
+amount = 2
+metadata/_custom_type_script = "uid://djkgfaaqbs746"
+
+[sub_resource type="Resource" id="Resource_kj41m"]
+script = ExtResource("3_o10f2")
+resource = ExtResource("5_mbmjb")
+amount = 8
+metadata/_custom_type_script = "uid://djkgfaaqbs746"
+
+[resource]
+script = ExtResource("6_pe4ob")
+building_name = "Constructor"
+size_meters = Vector3i(8, 10, 8)
+icon = ExtResource("1_cf6j2")
+prefab = ExtResource("2_3js4p")
+category = 1
+sub_category = 4
+power_consumption = 4.0
+requirements = Array[ExtResource("3_o10f2")]([SubResource("Resource_lptii"), SubResource("Resource_kj41m")])
+metadata/_custom_type_script = "uid://dhttg0ef5v2pv"

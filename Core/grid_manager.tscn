@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://bkwl7diqafsdn"]
+
+[ext_resource type="Script" uid="uid://cqtjx4wox06ix" path="res://Core/grid_manager.gd" id="1_ipb1g"]
+[ext_resource type="Script" uid="uid://48bslfrir82c" path="res://Core/camera_controller.gd" id="2_3os6o"]
+[ext_resource type="Script" uid="uid://yoidcdx2pwcf" path="res://UI/ui_manager.gd" id="3_x72ks"]
+[ext_resource type="Resource" uid="uid://cy3ru00b14cxe" path="res://Data/Buildings/foundation1mficsit_data.tres" id="4_25yer"]
+[ext_resource type="Resource" uid="uid://c7hlh1472101i" path="res://Data/Buildings/constructor_data.tres" id="5_68ph1"]
+[ext_resource type="Script" uid="uid://yfiywyij6ffj" path="res://UI/resource_totals_ui.gd" id="6_1dwip"]
+[ext_resource type="PackedScene" uid="uid://cxg65b48t61ej" path="res://UI/resource_entry_ui.tscn" id="7_wbwtg"]
+[ext_resource type="Script" uid="uid://vpw41qlrjak3" path="res://Core/power_summary_ui.gd" id="8_odopp"]
+[ext_resource type="Script" uid="uid://btb1hk34ojv6d" path="res://Core/player_controller.gd" id="9_utq87"]
+[ext_resource type="Script" uid="uid://ct6c7tnkv83uh" path="res://UI/building_ui_manager.gd" id="9_x72ks"]
+[ext_resource type="Script" uid="uid://dhttg0ef5v2pv" path="res://Data/Buildings/building_data.gd" id="10_25yer"]
+
+[node name="GridManager" type="Node2D" unique_id=1437783238 node_paths=PackedStringArray("player_controller")]
+script = ExtResource("1_ipb1g")
+player_controller = NodePath("PlayerController")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=119398469]
+script = ExtResource("2_3os6o")
+
+[node name="UIManager" type="CanvasLayer" parent="." unique_id=1527264171 node_paths=PackedStringArray("grid_manager", "player_controller")]
+script = ExtResource("3_x72ks")
+grid_manager = NodePath("..")
+player_controller = NodePath("../PlayerController")
+
+[node name="ResourceTotalsUI" type="PanelContainer" parent="UIManager" unique_id=2087635048 node_paths=PackedStringArray("grid_manager")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+script = ExtResource("6_1dwip")
+grid_manager = NodePath("../..")
+entry_prefab = ExtResource("7_wbwtg")
+
+[node name="ContentContainer" type="VBoxContainer" parent="UIManager/ResourceTotalsUI" unique_id=2030123761]
+layout_mode = 2
+
+[node name="PowerSummaryUI" type="PanelContainer" parent="UIManager" unique_id=1508305867 node_paths=PackedStringArray("grid_manager")]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("8_odopp")
+grid_manager = NodePath("../..")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UIManager/PowerSummaryUI" unique_id=1270788824]
+layout_mode = 2
+
+[node name="GenerationLabel" type="Label" parent="UIManager/PowerSummaryUI/VBoxContainer" unique_id=525793354]
+layout_mode = 2
+
+[node name="ConsumptionLabel" type="Label" parent="UIManager/PowerSummaryUI/VBoxContainer" unique_id=709990554]
+layout_mode = 2
+
+[node name="BalanceLabel" type="Label" parent="UIManager/PowerSummaryUI/VBoxContainer" unique_id=2113965390]
+layout_mode = 2
+
+[node name="BuildingUIManager" type="PanelContainer" parent="UIManager" unique_id=938501430 node_paths=PackedStringArray("grid_manager", "player_controller")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("9_x72ks")
+grid_manager = NodePath("../..")
+player_controller = NodePath("../../PlayerController")
+all_buildings = Array[ExtResource("10_25yer")]([ExtResource("5_68ph1"), ExtResource("4_25yer")])
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UIManager/BuildingUIManager" unique_id=2116552537]
+layout_mode = 2
+
+[node name="CategoryBar" type="HBoxContainer" parent="UIManager/BuildingUIManager/VBoxContainer" unique_id=1292060372]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="UIManager/BuildingUIManager/VBoxContainer" unique_id=1706410418]
+layout_mode = 2
+
+[node name="SubCategoryBar" type="HBoxContainer" parent="UIManager/BuildingUIManager/VBoxContainer" unique_id=1118685333]
+layout_mode = 2
+
+[node name="HSeparator2" type="HSeparator" parent="UIManager/BuildingUIManager/VBoxContainer" unique_id=204957202]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UIManager/BuildingUIManager/VBoxContainer" unique_id=894158005]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+
+[node name="BuildingGrid" type="GridContainer" parent="UIManager/BuildingUIManager/VBoxContainer/ScrollContainer" unique_id=162453845]
+layout_mode = 2
+columns = 8
+
+[node name="StateToolbarUI" type="PanelContainer" parent="UIManager" unique_id=817899647]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UIManager/StateToolbarUI" unique_id=94145482]
+layout_mode = 2
+
+[node name="WalkButton" type="Button" parent="UIManager/StateToolbarUI/HBoxContainer" unique_id=1452816418]
+layout_mode = 2
+text = "Walk"
+
+[node name="BuildButton" type="Button" parent="UIManager/StateToolbarUI/HBoxContainer" unique_id=546096701]
+layout_mode = 2
+text = "Build"
+
+[node name="DismantleButton" type="Button" parent="UIManager/StateToolbarUI/HBoxContainer" unique_id=1842611559]
+layout_mode = 2
+text = "Dismantle"
+
+[node name="PlayerController" type="Node" parent="." unique_id=709968196]
+script = ExtResource("9_utq87")
+
+[connection signal="pressed" from="UIManager/StateToolbarUI/HBoxContainer/WalkButton" to="UIManager" method="_on_walk_button_pressed"]
+[connection signal="pressed" from="UIManager/StateToolbarUI/HBoxContainer/BuildButton" to="UIManager" method="_on_build_button_pressed"]
+[connection signal="pressed" from="UIManager/StateToolbarUI/HBoxContainer/DismantleButton" to="UIManager" method="_on_dismantle_button_pressed"]

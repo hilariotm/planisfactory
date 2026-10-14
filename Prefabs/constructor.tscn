@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dmkio63f55qkd"]
+
+[ext_resource type="Texture2D" uid="uid://t25wmtc0hi6" path="res://Assets/Constructor.svg" id="1_as3ap"]
+
+[node name="constructor" type="Sprite2D" unique_id=678523777]
+texture = ExtResource("1_as3ap")

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://cy3ru00b14cxe"]
+
+[ext_resource type="Texture2D" uid="uid://c7t6u6amcikto" path="res://Assets/Foundation.svg" id="1_nh51x"]
+[ext_resource type="PackedScene" uid="uid://dksj7hkbrf3by" path="res://Prefabs/foundation1mficsit.tscn" id="2_s3t81"]
+[ext_resource type="Script" uid="uid://djkgfaaqbs746" path="res://Data/Buildings/building_requirement.gd" id="3_cnbch"]
+[ext_resource type="Resource" uid="uid://ci1yjsrtl1rpw" path="res://Data/Resources/concrete_data.tres" id="4_gb2sb"]
+[ext_resource type="Resource" uid="uid://bjuy4we4x8cqv" path="res://Data/Resources/iron_plate_data.tres" id="5_0thv1"]
+[ext_resource type="Script" uid="uid://dhttg0ef5v2pv" path="res://Data/Buildings/building_data.gd" id="6_aj72o"]
+
+[sub_resource type="Resource" id="Resource_n3vwk"]
+script = ExtResource("3_cnbch")
+resource = ExtResource("4_gb2sb")
+amount = 5
+metadata/_custom_type_script = "uid://djkgfaaqbs746"
+
+[sub_resource type="Resource" id="Resource_1dhht"]
+script = ExtResource("3_cnbch")
+resource = ExtResource("5_0thv1")
+amount = 2
+metadata/_custom_type_script = "uid://djkgfaaqbs746"
+
+[resource]
+script = ExtResource("6_aj72o")
+building_name = "Foundation 1m (FICSIT)"
+icon = ExtResource("1_nh51x")
+prefab = ExtResource("2_s3t81")
+category = 6
+sub_category = 28
+requirements = Array[ExtResource("3_cnbch")]([SubResource("Resource_n3vwk"), SubResource("Resource_1dhht")])
+metadata/_custom_type_script = "uid://dhttg0ef5v2pv"

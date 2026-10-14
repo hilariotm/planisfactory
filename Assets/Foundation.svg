@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="127" height="127" fill="#202020" stroke="#101010"/>
+<path d="M119.793 4.5L123.5 8.20703V119.793L119.793 123.5H8.20703L4.5 119.793V8.20703L8.20703 4.5H119.793Z" fill="#505050" stroke="#101010"/>
+<rect x="15.5" y="15.5" width="97" height="97" fill="#333333" stroke="#70839D"/>
+<path d="M108.5 113.5V122.5H19.5V113.5H108.5ZM14.5 19.5V108.5H5.5V19.5H14.5ZM122.5 19.5V108.5H113.5V19.5H122.5ZM108.5 5.5V14.5H19.5V5.5H108.5Z" fill="#56647B" stroke="#70839D"/>
+<line x1="47.5" y1="112" x2="47.5" y2="16" stroke="black" stroke-opacity="0.25"/>
+<line x1="79.5" y1="112" x2="79.5" y2="16" stroke="black" stroke-opacity="0.25"/>
+<line x1="80.5" y1="16" x2="80.5" y2="112" stroke="white" stroke-opacity="0.05"/>
+<line x1="48.5" y1="16" x2="48.5" y2="112" stroke="white" stroke-opacity="0.05"/>
+<line x1="80" y1="63.5" x2="112" y2="63.5" stroke="black" stroke-opacity="0.25"/>
+<line x1="48" y1="39.5" x2="79" y2="39.5" stroke="black" stroke-opacity="0.25"/>
+<line x1="48" y1="87.5" x2="79" y2="87.5" stroke="black" stroke-opacity="0.25"/>
+<line x1="16" y1="63.5" x2="47" y2="63.5" stroke="black" stroke-opacity="0.25"/>
+<line x1="112" y1="64.5" x2="81" y2="64.5" stroke="white" stroke-opacity="0.05"/>
+<line x1="48" y1="64.5" x2="16" y2="64.5" stroke="white" stroke-opacity="0.05"/>
+<line x1="80" y1="88.5" x2="49" y2="88.5" stroke="white" stroke-opacity="0.05"/>
+<line x1="80" y1="40.5" x2="49" y2="40.5" stroke="white" stroke-opacity="0.05"/>
+</svg>

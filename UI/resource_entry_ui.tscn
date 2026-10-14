@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cxg65b48t61ej"]
+
+[node name="ResourceEntryUI" type="HBoxContainer" unique_id=1810964502]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Icon" type="TextureRect" parent="." unique_id=571763051]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="AmountLabel" type="Label" parent="." unique_id=1443207208]
+layout_mode = 2

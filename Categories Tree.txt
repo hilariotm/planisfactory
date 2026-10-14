@@ -1,0 +1,63 @@
+Special
+    1. Progression
+    2. Awesome Bonus Program
+    3. FICSIIT Blueprint Designers
+    4. Workstations
+
+Production
+    1. Manufacturers
+    2. Smelters
+    3. Miners
+    4. Fluid Extractors
+
+Power
+    1. Generators
+    2. Power Distribution
+    3. Wall Outlets
+
+Logistics
+    1. Conveyor Belts
+    2. Conveyor Lifts
+    3. Conveyor Supports
+    4. Pipelines
+    5. Pipeline Supports
+    6. Sorting
+    7. Monitoring
+
+Organization
+    1. Lights
+    2. Signs
+    3. Storage
+    4. Towers
+
+Transport
+    1. Vehicle Transport
+    2. Vehicle Paths
+    3. Railway Transport
+    4. Hypertubes
+    5. Jump Pads
+    6. Elevators
+
+Foundations
+    1. Foundations
+    2. Ramps
+    3. Inverted Ramps
+    4. Quarter Pipes
+
+Walls
+    1. Basic Walls
+    2. Conveyor Connections
+    3. Ramp Walls
+    4. Inverted Ramp Walls
+    5. Tilted Walls
+    6. Window Walls
+    7. Framed Windows
+    8. Doors
+
+Architecture
+    1. Roofs
+    2. Frames
+    3. Beams
+    4. Pillars
+    5. Attachments
+    7. Catwalks

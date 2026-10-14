@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dksj7hkbrf3by"]
+
+[ext_resource type="Texture2D" uid="uid://c7t6u6amcikto" path="res://Assets/Foundation.svg" id="1_ahxso"]
+
+[node name="Foundation" type="Sprite2D" unique_id=696140044]
+texture = ExtResource("1_ahxso")
